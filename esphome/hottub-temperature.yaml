@@ -102,6 +102,10 @@ sensor:
     name: "Temperature"
     id: hottub_temp
     update_interval: 30s
+    filters:
+      - lambda: |-
+          if (x < 10.0f || x > 45.0f) return {};
+          return x;
 
   - platform: wifi_signal
     name: "WiFi Signal"
