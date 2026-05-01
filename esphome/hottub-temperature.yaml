@@ -178,10 +178,10 @@ interval:
 font:
   - file: "fonts/ConsidermevexedRegular-ExLe.ttf"
     id: font_large   # Override countdown
-    size: 26
+    size: 39
   - file: "fonts/ConsidermevexedRegular-ExLe.ttf"
     id: font_temp    # Standby temperature
-    size: 39
+    size: 58
 
 # ── SSD1309 Display ───────────────────────────────────────────────────────────
 # Note: SSD1309 uses the SSD1306 driver in ESPHome.
