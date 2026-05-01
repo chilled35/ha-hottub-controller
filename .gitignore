@@ -1,0 +1,14 @@
+# Home Assistant secrets — never commit these
+secrets.yaml
+.storage/
+
+# ESPHome build artifacts
+.esphome/
+build/
+
+# Font file — third party, download separately
+esphome/fonts/
+
+# OS files
+.DS_Store
+Thumbs.db
