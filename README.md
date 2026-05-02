@@ -1,6 +1,6 @@
 # 🛁 HA Hot Tub Controller
 
-A fully featured Home Assistant smart hot tub controller built around an **Octopus Cosy tariff**, a **Zigbee smart plug**, **solar production monitoring**, and a **custom OLED/touch sensor unit** built on a Wemos D1 Mini running ESPHome.
+A fully featured Home Assistant smart hot tub controller built around an **Octopus Cosy tariff**, a **Zigbee power breaker**, **solar production monitoring**, and a **custom OLED/touch sensor unit** built on a Wemos D1 Mini running ESPHome.
 
 The system automatically heats the tub during cheap electricity windows, pauses during peak hours, and fires up when surplus solar is available — all while exposing a polished standalone HTML dashboard and a physical wall-mounted control unit next to the tub.
 
@@ -26,7 +26,7 @@ The system automatically heats the tub during cheap electricity windows, pauses 
 ### Hot Tub Control
 | Component | Details |
 |---|---|
-| Smart plug | Zigbee plug with energy monitoring (power, voltage, energy sensors) |
+| Smart plug | Zigbee power breaker with energy monitoring (power, voltage, energy sensors) |
 | Entity | `switch.appliance_hottub` |
 
 ### OLED Controller Unit (wall-mounted, weatherproof)
