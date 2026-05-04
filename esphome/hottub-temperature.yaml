@@ -42,6 +42,7 @@ wifi:
   ssid: !secret wifi_ssid
   password: !secret wifi_password
   min_auth_mode: WPA2
+  power_save_mode: NONE
   manual_ip:
     static_ip: 192.168.0.38
     gateway: 192.168.0.1
@@ -97,9 +98,10 @@ globals:
 # ── Temperature Sensor ────────────────────────────────────────────────────────
 sensor:
   - platform: dallas_temp
+    address: 0x9f0000006a642628
     name: "Temperature"
     id: hottub_temp
-    update_interval: 30s
+    update_interval: 60s
     filters:
       - lambda: |-
           if (x < 5.0f || x > 60.0f) return {};
@@ -191,7 +193,7 @@ display:
     model: "SSD1306 128x64"
     address: 0x3C
     id: oled_display
-    update_interval: 1s
+    update_interval: 2s
     lambda: |-
       it.fill(COLOR_OFF);
 
